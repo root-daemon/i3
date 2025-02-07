@@ -137,6 +137,14 @@ workspace $ws8 output HDMI-0
 workspace $ws9 output DP-1
 workspace $ws10 output HDMI-0
 
+# Assign applications to specific workspaces and focus them
+assign [class="google-chrome"] $ws1
+for_window [class="google-chrome"] focus
+assign [class="cursor"] $ws2
+for_window [class="cursor"] focus
+assign [class="ghostty"] $ws3
+for_window [class="ghostty"] focus
+
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
 bindsym $mod+2 workspace number $ws2
